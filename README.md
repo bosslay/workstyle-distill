@@ -4,14 +4,14 @@
 
 ## 使用
 
-将本仓库放到 `~/.codex/skills/workstyle-distill/`，或已配置的 skills 目录。技能在宿主重新扫描后可发现；当前会话也可显式引用该目录的 `SKILL.md`。
+将本仓库放到 `~/.codex/skills/workstyle/`，或已配置的 skills 目录。技能在宿主重新扫描后可发现；当前会话也可显式引用该目录的 `SKILL.md`。
 
 ```text
-$workstyle-distill
-$workstyle-distill 更新
-$workstyle-distill 查看
-$workstyle-distill 后台更新
-$workstyle-distill 发布
+$workstyle
+$workstyle update
+$workstyle show
+$workstyle auto
+$workstyle publish
 ```
 
 “更新”会重新取证、归纳、去重并处理纠正，不只是追加文字。`profile.md` 是去标识的公开默认值；如有不同偏好，以当前用户明确要求为准。
