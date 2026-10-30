@@ -1,0 +1,7 @@
+__pycache__/
+.local/
+profile.json
+profile.previous.json
+*.lock
+*candidate*.json
+*gate*.json
