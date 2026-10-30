@@ -1,5 +1,5 @@
 ---
-name: workstyle-distill
+name: workstyle
 description: Distill a user's confirmed work and communication preferences from authorized conversations, apply scoped preferences during collaboration, or update them explicitly and during scheduled idle checks. Use for 蒸馏工作方式、更新沟通偏好、沉淀协作习惯. This is not a task log or a store for business contracts.
 ---
 
@@ -9,11 +9,11 @@ description: Distill a user's confirmed work and communication preferences from 
 
 ## 命令
 
-- `$workstyle-distill` / `应用`：读取 [profile.md](profile.md)，再读取本地私有 profile，应用与当前任务有关的偏好。不要重写业务文件或启动更新。
-- `$workstyle-distill 更新` / `蒸馏更新`：从当前会话和用户指定的其他来源提取新依据，按 [update-guide.md](update-guide.md) 更新本地偏好。
-- `$workstyle-distill 后台更新`：执行同一蒸馏流程，但必须先确认空闲；没有可靠的新依据则不写文件。
-- `$workstyle-distill 查看`：简要列出当前有效偏好、范围及待确认项；不默认展示私人原文。
-- `$workstyle-distill 发布`：审查公开文件差异和隐私检查结果，再发布到用户本次指定或本地配置的目标。更新命令不隐含发布授权。
+- `$workstyle` / `$workstyle apply`：读取 [profile.md](profile.md)，再读取本地私有 profile，应用与当前任务有关的偏好。不要重写业务文件或启动更新。
+- `$workstyle update`：从当前会话和用户指定的其他来源提取新依据，按 [update-guide.md](update-guide.md) 更新本地偏好。
+- `$workstyle auto`：执行同一蒸馏流程，但必须先确认空闲；没有可靠的新依据则不写文件。
+- `$workstyle show`：简要列出当前有效偏好、范围及待确认项；不默认展示私人原文。
+- `$workstyle publish`：审查公开文件差异和隐私检查结果，再发布到用户本次指定或本地配置的目标。更新命令不隐含发布授权。
 
 自然语言表达同一意图也可触发。短句 `continue / proceed / fix` 延续已授权任务，不触发偏好更新，更不扩大授权。
 
